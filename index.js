@@ -1,8 +1,9 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 var alumnos = Array();
 function agregar(alumno) {
     alumnos.push(alumno);
+    0;
 }
 function borrar(no_control) {
     var index = 0;
@@ -14,6 +15,7 @@ function borrar(no_control) {
         }
         index++;
     }
+    console.log("Nocontrol: " + no_control + " borrado");
 }
 function imprimir() {
     for (var _i = 0, alumnos_2 = alumnos; _i < alumnos_2.length; _i++) {
@@ -31,6 +33,7 @@ function modificar(no_control, alumno) {
         }
         index++;
     }
+    console.log("Nocontrol: " + no_control + " editado");
 }
 agregar({
     no_control: "13400419",

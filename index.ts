@@ -4,7 +4,7 @@ var alumnos = Array<Alumno>();
 
 function agregar(alumno:Alumno){
     alumnos.push(alumno);
-
+0
 }
 
 function borrar(no_control:string) {
@@ -16,6 +16,7 @@ function borrar(no_control:string) {
         }
          index++;
     }
+    console.log("Nocontrol: "+no_control+" borrado");
 }
 
 function imprimir(): void{
@@ -33,6 +34,7 @@ function modificar(no_control:string,alumno:Alumno){
         index++;
 
     }
+    console.log("Nocontrol: "+no_control+" editado");
 }
 
 agregar({
@@ -80,6 +82,8 @@ modificar(`13400495`,{
     genero:`M`,
     fecha_nacimiento: new Date(`September 28, 1995`),
     active:true})
+
+
 imprimir();
 
 
